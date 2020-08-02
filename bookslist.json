@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "The Stranger",
+    "author": "Albert Camus",
+    "pages": 130,
+    "cover_color": "peru",
+    "cover_url": "https://i1.wp.com/thegemsbok.com/wp-content/uploads/2015/11/The-Stranger-book-cover.png"
+  },
+  {
+    "id": 42,
+
+    "title": "The Sailor Who Fell from Grace with the Sea",
+    "author": "Yukio Mishima",
+    "pages": 200,
+    "cover_color": "pink",
+    "cover_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1334980317l/895680.jpg"
+  },
+  {
+    "id": 3,
+
+    "title": "sherlock holmes a study in scarlet",
+    "author": "Arthur Conan Doyle",
+    "pages": 150,
+    "cover_color": "maroon",
+    "cover_url": "https://m.media-amazon.com/images/I/41zV5nEnEEL.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Metamorphosis",
+    "author": "Franz Kafka",
+    "pages": 102,
+    "cover_color": "mediumblue",
+    "cover_url": "https://m.media-amazon.com/images/I/41ZVSlBzbsL.jpg"
+  }
+]

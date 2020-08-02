@@ -1,21 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, SafeAreaView, FlatList, Platform } from "react-native";
+import BookObj from "./components/BookObj";
+import booksList from "./bookslist.json";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <FlatList
+        data={booksList}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => (
+          <BookObj book={item} style={styles.container} />
+        )}
+      />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: (Platform.Os = "android" ? 20 : 0),
   },
 });
