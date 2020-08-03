@@ -1,21 +1,24 @@
 import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, Button } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Detail from "../components/Detail";
 import Home from "../components/Home";
 import BookListNavigation from "./BookListNavigation";
-import List from "../components/List";
 import Test from "../components/Test";
 
 const Stack = createStackNavigator();
 const HomeStack = () => {
   return (
-    <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen
-        options={{ headerShown: false }}
-        name="Home"
-        component={Home}
-      />
+    <Stack.Navigator
+      initialRouteName="Home"
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: "dodgerblue",
+        },
+        headerTitleStyle: { fontSize: 40, fontWeight: "bold" },
+      }}
+    >
+      <Stack.Screen name="Home" component={Home} />
       <Stack.Screen
         options={({ navigation }) => ({
           headerRight: () => (
