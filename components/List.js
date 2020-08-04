@@ -1,11 +1,13 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { styles } from "../public/styles/styles";
+import { TouchableOpacity } from "react-native-gesture-handler";
+import ItemsListComponent from "./ItemsListComponent";
 
-const List = () => {
+const List = ({ navigation }) => {
   return (
     <View style={styles.center}>
-      <Text> List</Text>
+      <ItemsListComponent navigation={navigation} />
     </View>
   );
 };

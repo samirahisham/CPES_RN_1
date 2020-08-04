@@ -11,5 +11,3 @@ const PreviousOrders = () => {
 };
 
 export default PreviousOrders;
-
-const styles = StyleSheet.create({});

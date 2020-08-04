@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Text } from "react-native";
-import List from "./components/List";
+
+import Routes from "./navigation/Routes";
 
 export default function App() {
-  return <List />;
+  return <Routes />;
 }
