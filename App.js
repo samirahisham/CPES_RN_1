@@ -1,7 +1,10 @@
 import React from "react";
-import { StyleSheet, Platform, View } from "react-native";
-import Route from "./navigation/Route";
+import { View, Text } from "react-native";
 
 export default function App() {
-  return <Route />;
+  return (
+    <View>
+      <Text>new clean project</Text>
+    </View>
+  );
 }
